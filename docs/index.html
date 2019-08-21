@@ -1,0 +1,172 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Port Explorer</title>
+        <style media="screen">
+            * {
+                margin: 0;
+            }
+            body {
+                background-color: steelblue;
+            }
+            h1 {
+                font-size: 5vw;
+                font-family: Lobster;
+                color: white;
+                text-align: center;
+                margin: 3vw;
+            }
+            hr {
+                margin: 1vw;
+            }
+            .downloads {
+                padding: 5vw 15vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                color: white;
+                font-family: Futura;
+            }
+            .latest-release {
+                display: flex;
+                flex-direction: column;
+                width: 30vw;
+            }
+            .recommended-release {
+                display: flex;
+                flex-direction: column;
+                width: 30vw;
+            }
+            label {
+                font-family: Lobster;
+                font-size: 3vw;
+            }
+            a.latest-download {
+                text-decoration: none;
+                margin: 2vw;
+                padding: 1vw;
+                font-size: 2vw;
+                font-family: Futura;
+                border: none;
+                border-radius: 2vw;
+                background-color: lightsteelblue;
+                color: white;
+            }
+            a.recommended-download {
+                text-decoration: none;
+                margin: 2vw;
+                padding: 1vw;
+                font-size: 2vw;
+                font-family: Futura;
+                border: none;
+                border-radius: 2vw;
+                background-color: lightsteelblue;
+                color: white;
+            }
+            a.latest-download:hover {
+                cursor: pointer;
+                text-decoration: underline;
+                background-color: lightblue;
+            }
+            a.recommended-download:hover {
+                cursor: pointer;
+                text-decoration: underline;
+                background-color: lightblue;
+            }
+            .archives {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            table {
+                margin-bottom: 2vw;
+                border: 1px solid white;
+            }
+            th {
+                background-color: lightsteelblue;
+                color: white;
+                font-family: Lobster;
+                font-size: 3vw;
+            }
+            td {
+                font-size: 2vw;
+                font-family: Futura;
+                width: 25vw;
+                padding: 1vw;
+                text-align: center;
+            }
+
+            thead, tbody {
+                background-color: white;
+                color: steelblue;
+            }
+            tbody td {
+                font-size: 1.5vw;
+            }
+            a:not(.latest-download):not(.recommended-download) {
+                text-decoration: none;
+                color: seagreen;
+            }
+            a:not(.latest-download):not(.recommended-download):hover {
+                text-decoration: underline;
+            }
+            a:not(.latest-download):not(.recommended-download).unstable {
+                color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Port Explorer</h1>
+        <hr>
+        <div class="downloads">
+            <div class="latest-release">
+                <label for="latest-button">Download Latest</label>
+                <hr>
+                <a class="latest-download" href="" download>PortExplorer-v1.3 ⤓</a>
+            </div>
+            <div class="recommended-release">
+                <label for="latest-button">Download Recommended</label>
+                <hr>
+                <a class="recommended-download" href="" download>PortExplorer-v1.3 ⤓</a>
+            </div>
+        </div>
+        <div class="archives">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Archives</th>
+                    </tr>
+                    <tr>
+                        <td>Version</td>
+                        <td>Date</td>
+                        <td>Download</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.3</td>
+                        <td>8/21/19</td>
+                        <td><a href="" download>PortExplorer-v1.3</a></td>
+                    </tr>
+                    <tr>
+                        <td>1.2</td>
+                        <td>8/21/19</td>
+                        <td><a href="" download>GamePorts-v1.2</a></td>
+                    </tr>
+                    <tr>
+                        <td>1.1</td>
+                        <td>8/20/19</td>
+                        <td><a href="" download>GamePorts-v1.1</a></td>
+                    </tr>
+                    <tr>
+                        <td>1.0</td>
+                        <td>8/19/19</td>
+                        <td><a class="unstable" href="" download>GamePorts-v1.0 {UNSTABLE}</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
