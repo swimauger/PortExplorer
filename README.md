@@ -1,3 +1,3 @@
 # Port Explorer
 
-![](./assets/warning-message.svg)
+![](./assets/com/swimauger/portexplorer/warning-message.svg)
