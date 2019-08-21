@@ -111,21 +111,23 @@ public class PortAssistant {
 								System.out.println("Looking for Gateway Devices");
 								discover.discover();
 								GatewayDevice d = discover.getValidGateway();
-								line = "server-ip="+d.getLocalAddress();
+								line = "server-ip="+d.getLocalAddress().getHostAddress();
 							} else if (line.contains("server-port=")) {
 								line = "server-port="+Config.targetPort;
 							}
-							lines.add(line);
+							lines.add(line+"\n");
 						}
 						fr.close();
 						br.close();
 						
 						FileWriter fw = new FileWriter(serverProps);
 			            BufferedWriter out = new BufferedWriter(fw);
+			            System.out.println(lines);
 			            for(String s : lines)
 			                 out.write(s);
 			            out.flush();
 			            out.close();
+			            portForward();
 					} catch (IOException | SAXException | ParserConfigurationException err) {
 						JOptionPane.showMessageDialog(App.INSTANCE, err.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 					}

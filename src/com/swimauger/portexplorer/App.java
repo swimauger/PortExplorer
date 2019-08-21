@@ -44,6 +44,7 @@ public class App {
 		frame = new JFrame("Port Explorer");
 		frame.setBounds(100, 100, 300, 230);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setResizable(false);
 		JTabbedPane tabs = new JTabbedPane();
 		tabs.add("Basic", new Basic());
 		tabs.add("Advanced", new Advanced());

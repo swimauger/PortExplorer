@@ -5,5 +5,5 @@ public class Config {
 	public static int sourcePort = 25565;
 	public static int targetPort = 25565;
 	public static String protocol = "TCP";
-	public static String serverDirectory = "/";
+	public static String serverDirectory = System.getProperty("user.home")+"/Desktop";
 }

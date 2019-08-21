@@ -17,6 +17,7 @@ import javax.swing.JTextField;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 import javax.swing.Box;
 import javax.swing.DefaultComboBoxModel;
@@ -64,6 +65,7 @@ public class Basic extends JPanel {
 		add(lblServer, "2, 8, right, default");
 		
 		txtPathToServer = new JTextField();
+		txtPathToServer.setText(System.getProperty("user.home")+"/Desktop");
 		add(txtPathToServer, "6, 8, fill, default");
 		txtPathToServer.setColumns(10);
 		
@@ -71,10 +73,11 @@ public class Basic extends JPanel {
 		btnBrowse.setToolTipText("Path to root of the servers folder");
 		btnBrowse.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JFileChooser fc = new JFileChooser();
+				JFileChooser fc = new JFileChooser(System.getProperty("user.home")+"/Desktop");
 				fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 				fc.showOpenDialog(App.INSTANCE);
-				Config.serverDirectory = fc.getSelectedFile()+"";
+				File selectedFolder = fc.getSelectedFile();
+				Config.serverDirectory = selectedFolder != null ? selectedFolder+"" : Config.serverDirectory;
 				txtPathToServer.setText(Config.serverDirectory);
 			}
 		});
