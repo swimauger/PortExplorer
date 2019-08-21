@@ -1,12 +1,12 @@
-package com.swimauger.gameports;
+package com.swimauger.portexplorer;
 
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JTabbedPane;
 
-import com.swimauger.gameports.components.Advanced;
-import com.swimauger.gameports.components.Basic;
+import com.swimauger.portexplorer.components.Advanced;
+import com.swimauger.portexplorer.components.Basic;
 
 public class App {
 

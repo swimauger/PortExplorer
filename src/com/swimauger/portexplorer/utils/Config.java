@@ -1,4 +1,4 @@
-package com.swimauger.gameports.utils;
+package com.swimauger.portexplorer.utils;
 
 public class Config {
 	public static String selectedGame = "Minecraft";

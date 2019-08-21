@@ -1,4 +1,4 @@
-package com.swimauger.gameports.utils;
+package com.swimauger.portexplorer.utils;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -18,7 +18,7 @@ import org.bitlet.weupnp.GatewayDiscover;
 import org.bitlet.weupnp.PortMappingEntry;
 import org.xml.sax.SAXException;
 
-import com.swimauger.gameports.App;
+import com.swimauger.portexplorer.App;
 
 public class PortAssistant {
 	

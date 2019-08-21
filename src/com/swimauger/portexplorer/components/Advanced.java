@@ -1,11 +1,11 @@
-package com.swimauger.gameports.components;
+package com.swimauger.portexplorer.components;
 
 import javax.swing.JPanel;
 import com.jgoodies.forms.layout.FormLayout;
 import com.jgoodies.forms.layout.ColumnSpec;
 import com.jgoodies.forms.layout.RowSpec;
-import com.swimauger.gameports.App;
-import com.swimauger.gameports.utils.Config;
+import com.swimauger.portexplorer.App;
+import com.swimauger.portexplorer.utils.Config;
 import com.jgoodies.forms.layout.FormSpecs;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
