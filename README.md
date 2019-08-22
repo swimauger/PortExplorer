@@ -1,3 +1,4 @@
 # Port Explorer
-
-![](./assets/com/swimauger/portexplorer/svg/warning-message.svg)
+```diff
+! Warning: May not work with every router. Router must be enabled with access to Universal Plug and Play (UPNP)
+```
