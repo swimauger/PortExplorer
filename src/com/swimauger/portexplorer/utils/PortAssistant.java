@@ -76,7 +76,7 @@ public class PortAssistant {
 				if (selection == 1) {
 					System.out.println("Sending port mapping request");
 					if(d.addPortMapping(Config.sourcePort, Config.targetPort, localAddress.getHostAddress(), Config.protocol, "Mapping ports...")) {
-						JOptionPane.showMessageDialog(App.INSTANCE, "Server port mapping successful!");
+						JOptionPane.showMessageDialog(App.INSTANCE, "Server port mapping successful!\nLocal IP: "+localAddress.getHostAddress()+"\nExternal IP: "+externalIPAddress);
 						System.out.println("Success");
 					} else {
 						JOptionPane.showMessageDialog(App.INSTANCE, "Port mapping failed!", "Error", JOptionPane.ERROR_MESSAGE);
